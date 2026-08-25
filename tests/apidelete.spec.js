@@ -67,7 +67,7 @@ test("Put Example", async({request})=>{
     console.log(deleteresponse.status());
     expect(deleteresponse.status()).toBe(405);
     console.log(deleteresponse.statusText());
-    console.log("======================================================================");
+    console.log("===============================================+=======================");
 
     const newdelete = await request.get("https://restful-booker.herokuapp.com/booking/${bookingid}");
     console.log(newdelete.status());
